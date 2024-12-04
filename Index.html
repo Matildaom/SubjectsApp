@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Results Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Subject Results Calculator</h1>
+    <div id="subjectInputSection">
+        <label for="subjectCount">Enter the number of subjects:</label>
+        <input type="number" id="subjectCount" min="1" required>
+        <button onclick="generateSubjectInputs()">Submit</button>
+    </div>
+    
+    <div id="scoresSection" class="hidden">
+        <h2>Enter Scores:</h2>
+        <div id="scoreInputs"></div>
+        <button onclick="calculateResults()">Calculate</button>
+    </div>
+
+    <div id="results" class="result hidden"></div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
+
